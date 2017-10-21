@@ -1,2 +1,2 @@
 # ccounit
-Projeto de  CCO
+Projeto CCO
