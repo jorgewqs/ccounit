@@ -25,5 +25,5 @@ urlpatterns = [
     url(r'^sca/', include('cco.sca.urls', namespace='sca')),
     url(r'^jet/dashboard/', include('jet.dashboard.urls', 'jet-dashboard')),
     url(r'^jet/', include('jet.urls', 'jet')),
-    url(r'^admin/', admin.site.urls),
+    #url(r'^admin/', admin.site.urls),
 ]
