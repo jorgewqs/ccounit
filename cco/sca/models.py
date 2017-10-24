@@ -17,3 +17,7 @@ class Sca(models.Model):
     class Meta:
         ordering = ['nome']
         verbose_name = 'Acesso'
+
+class Setor(models.Model):
+    setor = models.CharField('Setor', max_length=10)
+    descricao = models.TextField('Descrição', blank=True)
