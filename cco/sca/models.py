@@ -1,6 +1,4 @@
 from django.db import models
-from django.forms import ModelForm
-
 
 class Setor(models.Model):
     setor = models.CharField('Setor', max_length=100)
