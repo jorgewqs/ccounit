@@ -38,12 +38,12 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
-
     'cco.core',
     'cco.dvrscan',
     'cco.app',
     'cco.escala',
     'cco.sca',
+    #'analytics',
 ]
 
 MIDDLEWARE = [
@@ -112,7 +112,6 @@ JET_THEMES = [
 JET_SIDE_MENU_COMPACT = True
 
 WSGI_APPLICATION = 'cco.wsgi.application'
-
 
 # Database
 # https://docs.djangoproject.com/en/1.11/ref/settings/#databases
