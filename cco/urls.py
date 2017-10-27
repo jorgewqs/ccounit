@@ -18,7 +18,7 @@ from django.contrib import admin
 
 urlpatterns = [
     url(r'^', admin.site.urls),
-    #url(r'^', include('cco.core.urls', namespace='core')),
+    url(r'^core/', include('cco.core.urls', namespace='core')),
     url(r'^dvrscan/', include('cco.dvrscan.urls', namespace='dvrscan')),
     url(r'^escala/', include('cco.escala.urls', namespace='escala')),
     url(r'^app/', include('cco.app.urls', namespace='app')),
