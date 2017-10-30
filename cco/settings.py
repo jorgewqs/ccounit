@@ -43,6 +43,7 @@ INSTALLED_APPS = [
     'cco.app',
     'cco.escala',
     'cco.sca',
+    'cco.chamado',
     #'analytics',
 ]
 
@@ -141,6 +142,8 @@ AUTH_PASSWORD_VALIDATORS = [
         'NAME': 'django.contrib.auth.password_validation.NumericPasswordValidator',
     },
 ]
+
+#JET_MODULE_GOOGLE_ANALYTICS_CLIENT_SECRETS_FILE = os.path.join(PROJECT_DIR, 'client_secrets.json')
 
 #  IP autorizados
 ALLOWED_HOSTS = ['*']

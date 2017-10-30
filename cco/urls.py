@@ -15,6 +15,7 @@ Including another URLconf
 """
 from django.conf.urls import url, include
 from django.contrib import admin
+from jet.dashboard.dashboard_modules import google_analytics_views
 
 urlpatterns = [
     url(r'^', admin.site.urls),
@@ -23,6 +24,7 @@ urlpatterns = [
     url(r'^escala/', include('cco.escala.urls', namespace='escala')),
     url(r'^app/', include('cco.app.urls', namespace='app')),
     url(r'^sca/', include('cco.sca.urls', namespace='sca')),
+    url(r'^chamado/', include('cco.chamado.urls', namespace='chamado')),
     url(r'^jet/dashboard/', include('jet.dashboard.urls', 'jet-dashboard')),
     url(r'^jet/', include('jet.urls', 'jet')),
     #url(r'^admin/', admin.site.urls),
