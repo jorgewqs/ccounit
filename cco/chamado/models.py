@@ -29,6 +29,10 @@ class Chamado(models.Model):
     data_criacao = models.DateTimeField('Criado em', auto_now_add=True)
     status = models.BooleanField('Status (Ativo=Resolvido)', blank=True)
 
+    def status(self):
+        return self.status is not None
+    status.boolean = True
+
     def __str__(self):
         return self.nome
 

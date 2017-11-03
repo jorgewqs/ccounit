@@ -3,7 +3,7 @@ from django.contrib import admin
 from .models import Dvr
 
 class DvrAdmin(admin.ModelAdmin):
-    list_display = ['name_dvr', 'unidade_dvr', 'local_dvr', 'ip_dvr']
+    list_display = ['name_dvr', 'unidade_dvr', 'local_dvr', 'ip_dvr', 'status_dvr']
     search_fields = ['name_dvr', 'local_dvr', 'unidade_dvr']
 
 admin.site.register(Dvr, DvrAdmin)
