@@ -20,7 +20,7 @@ class Tipo(models.Model):
 TIPO_LISTA = [(s.tipo, s.tipo) for s in Tipo.objects.all().order_by('tipo')]
 
 class Chamado(models.Model):
-    id_chamado = models.CharField('ID Chamado', max_length=14, default=time.strftime("%Y%m%d%H%M%S"), null=True)
+    id_chamado = models.CharField('ID Chamado', max_length=14, default=ID_CHAMADO2, null=True)
     setor = models.CharField('Setor', max_length=100, choices=SETOR_LISTA)
     tipo = models.CharField('Tipo', max_length=100, choices=TIPO_LISTA)
     nome = models.CharField('Nome', max_length=100)
