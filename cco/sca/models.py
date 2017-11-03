@@ -10,11 +10,11 @@ class Tipo(models.Model):
     tipo = models.CharField('Tipo', max_length=100)
     descricao = models.TextField('Descrição', blank=True)
 
-AUTO_LISTA = [(s.tipo, s.tipo) for s in Tipo.objects.all().order_by('tipo')]
+TIPO_LISTA = [(s.tipo, s.tipo) for s in Tipo.objects.all().order_by('tipo')]
 
 class Sca(models.Model):
     setor = models.CharField('Setor', max_length=100, choices=SETOR_LISTA)
-    tipo = models.CharField('Tipo', max_length=100, choices=AUTO_LISTA)
+    tipo = models.CharField('Tipo', max_length=100, choices=TIPO_LISTA)
     id_chamado = models.CharField('ID Chamado', max_length=12, null=True)
     nome = models.CharField('Nome', max_length=100)
     descricao = models.TextField('Descrição', blank=True)
